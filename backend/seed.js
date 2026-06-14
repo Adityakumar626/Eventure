@@ -82,7 +82,7 @@ const events = [
     totalSeats: 200,
     ticketPrice: 0,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://plus.unsplash.com/premium_photo-1683121716061-3faddf4dc504?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     title: "Neon Nights EDM Festival",
@@ -94,7 +94,7 @@ const events = [
     totalSeats: 500,
     ticketPrice: 1500,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://plus.unsplash.com/premium_photo-1682125853703-896a05629709?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWN8ZW58MHx8MHx8fDA%3D",
   },
   {
     title: "Global Leaders Business Summit",
@@ -106,7 +106,7 @@ const events = [
     totalSeats: 150,
     ticketPrice: 5000,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D",
   },
   {
     title: "Modern Art Expo 2024",
@@ -118,7 +118,7 @@ const events = [
     totalSeats: 300,
     ticketPrice: 200,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fHww",
   },
   {
     title: "Startup Pitch & Pitch Competition",
@@ -130,7 +130,7 @@ const events = [
     totalSeats: 250,
     ticketPrice: 100,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1506787497326-c2736dde1bef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D",
   },
   {
     title: "Cloud Computing Architecture Seminar",
@@ -142,7 +142,7 @@ const events = [
     totalSeats: 100,
     ticketPrice: 600,
     imageUrl:
-      "https://images.unsplash.com/photo-1778240076945-de18ba246cd4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHRlY2h8ZW58MHx8MHx8fDA%3D",
   },
 ];
 
