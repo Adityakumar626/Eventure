@@ -38,8 +38,9 @@ const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#FBFBFA]/90 backdrop-blur-md border-b border-[#EAE9E4] px-6 py-5 md:px-12"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#FBFBFA]/90 backdrop-blur-sm border-[#EAE9E4] px-6 py-5 md:px-12"
     >
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[75%] h-px bg-[#EAE9E4]" />
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Side: Luxury Asymmetric Logo */}
         <Link to="/" className="group flex flex-col items-start">

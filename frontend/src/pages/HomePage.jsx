@@ -81,7 +81,7 @@ const HomePage = () => {
         <div className="relative bg-[#2E2C29] text-white rounded-3xl overflow-hidden shadow-sm">
           {/* Visual Comfort Layer Masks */}
           <div className="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=3000&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#2E2C29]/40 to-[#2E2C29]"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#2E2C29]/40 to-[#2E2C29]"></div>
 
           <div className="relative p-8 md:p-20 text-center flex flex-col items-center z-10 max-w-4xl mx-auto">
             <motion.span
@@ -280,7 +280,7 @@ const HomePage = () => {
                     </div>
                   </div>
 
-                  <div className="p-6 flex-grow flex flex-col">
+                  <div className="p-6 grow flex flex-col">
                     <div className="text-[10px] font-semibold text-[#4A5D4E] uppercase tracking-[0.18em] mb-3">
                       {event.category}
                     </div>
