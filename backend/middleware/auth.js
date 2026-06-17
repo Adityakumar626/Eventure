@@ -42,6 +42,8 @@ const admin = (req, res, next) => {
       .status(403)
       .json({ message: "Forbidden, admin access required" });
   }
+  console.log("USER FROM TOKEN:", req.user);
+  console.log("ROLE:", req.user?.role);
 };
 
 export { admin, protect };
