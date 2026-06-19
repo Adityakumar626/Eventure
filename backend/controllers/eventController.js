@@ -47,15 +47,18 @@ export const createEvent = async (req, res) => {
     const event = await Event.create({
       title,
       description,
-      ticketPrice,
+      ticketPrice: Number(ticketPrice),
       date,
       location,
-      totalSeats,
+      totalSeats: Number(totalSeats),
       category,
       imageUrl,
       createdBy: req.user._id,
-      availableSeats: totalSeats,
+      availableSeats: Number(totalSeats),
     });
+    if (!totalSeats || !ticketPrice) {
+      return req.json(400).json({ error: "Seats and Price are Required" });
+    }
     res.status(201).json(event);
   } catch (error) {
     res.status(500).json({ error: error.message });
