@@ -2,13 +2,14 @@ import React, { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Lock, ArrowRight, Loader2 } from "lucide-react";
+import { Mail, Lock, ArrowRight, Loader2, Eye, EyeOff } from "lucide-react";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -172,16 +173,34 @@ const LoginPage = () => {
                   Forgot?
                 </Link>
               </div>
+
               <div className="relative group">
+                {/* Left Icon (Lock) */}
                 <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 w-4 h-4 stroke-[1.5] transition-colors group-focus-within:text-neutral-900" />
+
+                {/* Input Field */}
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"} // Dynamic type changing
                   required
                   placeholder="••••••••"
-                  className="w-full pl-11 pr-4 py-2.5 sm:py-3 bg-neutral-50/40 rounded-xl border border-neutral-200 focus:border-neutral-900 focus:bg-white focus:ring-0 transition-all duration-300 outline-none text-neutral-800 text-sm placeholder:text-neutral-300"
+                  className="w-full pl-11 pr-11 py-2.5 sm:py-3 bg-neutral-50/40 rounded-xl border border-neutral-200 focus:border-neutral-900 focus:bg-white focus:ring-0 transition-all duration-300 outline-none text-neutral-800 text-sm placeholder:text-neutral-300"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
+
+                {/* Right Icon (Toggle Button) */}
+                <button
+                  type="button" // Critical to prevent this button from submitting forms accidentally
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-900 transition-colors p-0.5 rounded-md focus:outline-none focus:ring-1 focus:ring-neutral-400"
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                >
+                  {showPassword ? (
+                    <EyeOff className="w-4 h-4 stroke-[1.5]" />
+                  ) : (
+                    <Eye className="w-4 h-4 stroke-[1.5]" />
+                  )}
+                </button>
               </div>
             </motion.div>
 

@@ -35,6 +35,8 @@ const protect = async (req, res, next) => {
 };
 
 const admin = (req, res, next) => {
+  console.log("USER FROM TOKEN:", req.user);
+  console.log("ROLE:", req.user?.role);
   if (req.user?.role === "admin") {
     next();
   } else {
@@ -42,8 +44,6 @@ const admin = (req, res, next) => {
       .status(403)
       .json({ message: "Forbidden, admin access required" });
   }
-  console.log("USER FROM TOKEN:", req.user);
-  console.log("ROLE:", req.user?.role);
 };
 
 export { admin, protect };

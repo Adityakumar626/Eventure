@@ -7,12 +7,14 @@ import {
   getMyBookings,
   confirmBooking,
   cancelBooking,
+  getAllBookings,
 } from "../controllers/bookingController.js";
 
 router.post("/", protect, bookEvent);
 router.post("/send-otp", protect, sendBookingOtp);
 router.get("/my", protect, getMyBookings);
 router.put("/:id/confirm", protect, admin, confirmBooking);
-router.delete("/:id", cancelBooking);
+router.delete("/:id", protect, cancelBooking);
+router.get("/", protect, admin, getAllBookings);
 
 export default router;
